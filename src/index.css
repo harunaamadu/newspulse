@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Cinzel", Georgia, serif;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-prose: "Source Serif 4", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+/* Custom editorial styling */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+.font-editorial-headline {
+  font-family: var(--font-serif);
+  letter-spacing: -0.015em;
+}
+
+.font-editorial-body {
+  font-family: var(--font-prose);
+}
+
+.font-editorial-display {
+  font-family: var(--font-display);
+}
+
+/* Dropcap for lead article paragraphs */
+.drop-cap::first-letter {
+  float: left;
+  font-size: 3.5rem;
+  line-height: 0.85;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: currentColor;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 113, 108, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 113, 108, 0.5);
+}

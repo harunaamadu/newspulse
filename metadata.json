@@ -1,0 +1,6 @@
+{
+  "name": "NewsPulse - Personalized Editorial News & Real-Time Alerts",
+  "description": "An editorial news platform featuring personalized feeds, real-time push notifications, offline reading, community discussions, and responsive broadsheet typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
